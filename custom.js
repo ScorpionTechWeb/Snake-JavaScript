@@ -88,21 +88,17 @@ function bougeSnake() {
     if (tete[0] == -1 || tete[0] == COL || tete[1] == -1 || tete[1] == LINES) 
         return false;
     
-
-
     for (let i = 0, l = snake.length - 1; i < l; i++) {
         if (tete[0] == snake[i][0] && tete[1] == snake[i][1]) 
             return false;
-        
-
-
     }
     if (tete[0] == bonbon[0] && tete[1] == bonbon[1]) {
         placeBonbon();
         majScore(snake.length - 4);
     } else {
         snake.pop();
-    } snake.unshift(tete);
+    } 
+    snake.unshift(tete);
     return true;
 }
 
