@@ -1,3 +1,12 @@
+html, body {
+    height: 100%;
+	overflow: hidden
+}
+.contenu {
+	text-align: center;
+	overflow: hidden;
+	margin: 10px;
+}
 #canvas{
 		border:solid 1px black;
 }
