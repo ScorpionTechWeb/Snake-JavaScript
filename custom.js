@@ -15,21 +15,23 @@ canvas.height = LINES * COTE;
 ctx.fillStyle = "#ff0000";
 
 // Emplacement de départ de Snake
+var chRandom = Math.floor(Math.random() * (20 - 0 + 1)) + 0;
+var chRandom2 = Math.floor(Math.random() * (20 - 0 + 1)) + 0;
 var snake = [
     [
-        4, 1
+        chRandom, chRandom2
     ],
     [
-        3, 1
+        chRandom-1, chRandom2
     ],
     [
-        2, 1
+        chRandom-2, chRandom2
     ],
     [
-        1, 1
+        chRandom-3, chRandom2
     ],
     [
-        0, 1
+        chRandom-4, chRandom2
     ],
 ];
 // Variable bonbon
