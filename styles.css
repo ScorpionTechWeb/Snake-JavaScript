@@ -1,12 +1,23 @@
-html, body {
+html,
+body {
     height: 100%;
-	overflow: hidden;
+
+    overflow: hidden;
 }
-.contenu {
-	text-align: center;
-	overflow: hidden;
-	margin: 10px;
+
+#canvas {
+    border: solid 1px black;
 }
-#canvas{
-		border:solid 1px black;
+#global {
+    overflow: auto;
+    text-align: center;
+}
+#gauche {
+    float: left;
+    width: 50%;
+    display: inline-block;
+}
+#droit {
+    overflow: auto;
+    display: inline-block;
 }
